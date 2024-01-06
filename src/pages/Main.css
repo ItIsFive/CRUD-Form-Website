@@ -1,0 +1,54 @@
+*{
+  align-items: center
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #212121;
+  color: whitesmoke;
+  flex-direction: column;
+}
+
+.main-header{
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+
+}
+
+.main-header a{
+  transition : all .55s ease;
+  color: gold;
+}
+
+.main-header span a{
+  transition : all .55s ease;
+}
+
+.main-header a:hover::after {
+  content: 'reate ';
+  
+}
+
+.main-header a:hover{
+  font-size: larger;
+  margin-bottom: 10px; /* Memberikan jarak antar teks 'C', 'R', dan teks lain */
+  color: rgb(190, 113, 49);
+}
+
+
+.main-header span a:hover::after {
+  content: 'ead ';
+}
+
+.main-header span a:hover{
+  font-size: larger;
+
+}
+.create-form label{
+  color: whitesmoke !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px !important;
+}

@@ -1,0 +1,29 @@
+/* Example styles for the table */
+.Main {
+    margin: 20px; /* Adjust margin as needed */
+}
+
+/* Style for the table */
+.Table {
+    width: 60%;
+    border-collapse: collapse;
+}
+
+/* Style for table headers */
+.Table th {
+    background-color: #111010; /* Red background for headers */
+    color: white;
+    padding: 10px;
+}
+
+/* Style for table cells */
+.Table td {
+    border: 1px solid #faf9f9; /* Red border for cells */
+    padding: 8px;
+}
+
+/* Style for table rows on hover */
+.Table tr:hover {
+    background-color: rgb(39, 34, 34); /* Darker red background on hover */
+    width: 80%;
+}
