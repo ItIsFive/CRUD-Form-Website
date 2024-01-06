@@ -1,6 +1,3 @@
-*{
-  align-items: center
-}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .main{
   display: flex;
@@ -34,7 +31,7 @@
 
 .main-header a:hover{
   font-size: larger;
-  margin-bottom: 10px; /* Memberikan jarak antar teks 'C', 'R', dan teks lain */
+  margin-bottom: 10px; 
   color: rgb(190, 113, 49);
 }
 
@@ -52,3 +49,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 12px !important;
 }
+
+.backbtn{
+  display : flex;
+} 
