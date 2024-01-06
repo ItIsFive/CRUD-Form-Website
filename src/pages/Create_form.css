@@ -1,9 +1,6 @@
 .create-form {
     width: 30%;
     padding: 40px;
-    border: 1px solid #000000;
-    border-radius: 20px;
-    background-color: #0a0a0a42;
 }
 
 .create-form label {
@@ -29,12 +26,20 @@
 
 .create-form button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: rgba(216, 197, 88, 0.726);
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    margin-right: 10px;
+    transition: all .55s ease;
+    margin-top: 10px;
+}
+
+.create-form button:hover {
+    background-color: rgb(190, 113, 49);
+    transform: translatex(3px) translateY(3px);
 }
 
 .Main {
@@ -42,11 +47,11 @@
 }
 
 .create-form .checkbox-wrapper {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    width: fit-content; 
 }
 
 .create-form .checkbox-wrapper label {
     margin-right: 10px; 
-
 }

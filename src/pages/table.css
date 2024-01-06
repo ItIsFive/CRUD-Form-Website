@@ -1,29 +1,43 @@
-/* Example styles for the table */
 .Main {
-    margin: 20px; /* Adjust margin as needed */
+    margin: 20px ;
 }
 
-/* Style for the table */
 .Table {
-    width: 60%;
+    width: 40%;
     border-collapse: collapse;
+    padding: 10px;
+    margin-top: 10px;
 }
 
-/* Style for table headers */
 .Table th {
-    background-color: #111010; /* Red background for headers */
+    background-color: #363636; 
     color: white;
     padding: 10px;
+    border-radius: 5px;
+    border-bottom: 1px rgb(131, 130, 130) solid;
 }
 
-/* Style for table cells */
 .Table td {
-    border: 1px solid #faf9f9; /* Red border for cells */
     padding: 8px;
+    border-bottom: 1px rgb(131, 130, 130) solid;
 }
 
-/* Style for table rows on hover */
 .Table tr:hover {
-    background-color: rgb(39, 34, 34); /* Darker red background on hover */
-    width: 80%;
+    background-color:rgba(255, 217, 0, 0.082); 
+}
+
+.Table button {
+    background-color: rgba(216, 197, 88, 0.726);
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all .55s ease;
+    margin-left: 10px;
+}
+
+.Table button:hover {
+    background-color: rgb(190, 113, 49);
+    transform: translatex(2px) translateY(2px);
 }

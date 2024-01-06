@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Checkbox, Form } from 'semantic-ui-react'
 import Main from './Main'; 
 import axios from 'axios';
 import './Create_form.css';
+import ScrollReveal from 'scrollreveal'
 
 export default function Create() {
     const [NPM, setNPM] = useState('');
@@ -10,23 +11,36 @@ export default function Create() {
     const [Kelas, setKelas] = useState('');
     const [Jurusan, setJurusan] = useState('');
     const [Nomor, setNomor] = useState('');
-    const [checkbox, setCheckbox] = useState(false);
 
+    useEffect(() => {
+        ScrollReveal().reveal('.create-form', {
+          distance:'10px',
+          duration: 2600,
+          delay: 250,
+          reset: true
+        });
+      }, []);
 
     const postData = () => {
+
         axios.post('https://6572e6de192318b7db413c53.mockapi.io/fakeData', {
             NPM,
             Nama,
             Kelas,
             Jurusan,
             Nomor,
-            checkbox,
         }).then(() => {
             alert('Data Saved')
             
             window.location.href = "/read";
         })
     }
+
+    const clearBtn = () => {
+        const form = document.querySelector('.create-form');
+        form.reset(); 
+    };
+    
     return (
         <div>
             <Main>
@@ -36,8 +50,8 @@ export default function Create() {
                         <input placeholder='NPM' onChange={(e) => setNPM(e.target.value)} />
                     </Form.Field>
                     <Form.Field>
-                        <label>Name</label>
-                        <input placeholder='Name' onChange={(e) => setNama(e.target.value)} />
+                        <label>Nama</label>
+                        <input placeholder='Nama' onChange={(e) => setNama(e.target.value)} />
                     </Form.Field>
                     <Form.Field>
                         <label>Kelas</label>
@@ -48,18 +62,11 @@ export default function Create() {
                         <input placeholder='Jurusan' onChange={(e) => setJurusan(e.target.value)} />
                     </Form.Field>
                     <Form.Field>
-                        <label>No. HP</label>
+                        <label>No. Handphone</label>
                         <input placeholder='No. HP' onChange={(e) => setNomor(e.target.value)}/>
                     </Form.Field>
-                    <Form.Field >
-                        <div className="checkbox-wrapper">
-                            <label>
-                                I agree to the Terms and Conditions
-                            </label>
-                            <Checkbox onChange={(e) => setCheckbox(!checkbox)} />
-                        </div>
-                    </Form.Field>
                     <Button onClick={postData} type='submit'>Submit</Button>
+                    <Button onClick={clearBtn} type='submit'>Clear</Button>
                 </Form>
             </Main>
         </div>

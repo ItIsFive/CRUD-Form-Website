@@ -1,14 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect} from 'react';
 import './Home.css';
 import ScrollReveal from 'scrollreveal';
 import { Link } from 'react-router-dom';
+import 'remixicon/fonts/remixicon.css';
 
 function Home() {
   useEffect(() => {
     ScrollReveal().reveal('.gotxt, .goimg', {
-      distance:'65px',
+      distance:'100px',
       duration: 2600,
-      delay: 450,
+      delay: 250,
       reset: true
     });
   }, []);
@@ -21,8 +22,6 @@ function Home() {
   
         <link rel="stylesheet" type="text/css" href="home.css" />
   
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet" />
-  
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet" />
@@ -31,14 +30,14 @@ function Home() {
       </head>
       <body>
         <header>
-          <a href='index.html' className="logo">Studern Form</a>
+          <a href='/home' className="logo">Student Form</a>
           <div className="bx bx-menu" id="menu-icon"></div>
         </header>
   
         <section className="go">
           <div className="gotxt">
-            <h1>Daftarkan Sekarang !!!</h1>
-            <p>Daftarkan diri anda sekarang agar data aman</p>
+            <h1>Record Your Data Now!!</h1>
+            <p>Pendataan Mahasiswa Berbasis Web</p>
             <Link to="/main" className="ctaa">GO<i className="ri-play-line"></i></Link>  
             <div className="media">
               <a href="https://www.instagram.com/fadhil.m._" className="ig" target="_blank"><i className="ri-instagram-line"></i></a>
@@ -47,7 +46,7 @@ function Home() {
           </div>
   
           <div className="goimg">
-            <img src="https://i.pinimg.com/564x/0f/b6/1e/0fb61e249f321d55f71f61a650a70e6a.jpg" alt="pic not loaded" />
+            <img src="https://i.pinimg.com/564x/0f/b6/1e/0fb61e249f321d55f71f61a650a70e6a.jpg" alt="pic not loaded"/>
           </div>
         </section>
       </body>
