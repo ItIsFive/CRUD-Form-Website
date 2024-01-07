@@ -53,7 +53,7 @@
   
   .gotxt h1{
     font-family: 'Permanent Marker', cursive;
-    font-size: 90px;
+    font-size: 5vw;
     line-height: 1;
     color:white;
     margin: 0 0 5px;
@@ -129,17 +129,19 @@
   }
   
   .goimg img{
-    width: 800px;
-    height: 700px;
+    width: 85%;
+    height: 75%;
+    max-width: 90%;
+    max-height: 80%;
     display: grid;
     border: 2px transparent;
     border-radius: 20px;
     transition: all .55s ease;
-    margin: all 20px;
+    margin: 5px;
     box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
   }
 
   .goimg img:hover{
-    width: 850px;
-    height: 750px;
+    width: 90%;
+    height: 80%;
   }
