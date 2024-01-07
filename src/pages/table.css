@@ -29,15 +29,21 @@
 .Table button {
     background-color: rgba(216, 197, 88, 0.726);
     color: white;
-    padding: 10px 18px;
+    padding: 5px 10px;
     border: none;
     border-radius: 4px;
     font-weight: bold;
     transition: all .55s ease;
     margin-left: 10px;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center; 
+    display: flex; 
+    width: 80%;
+    max-width: 80%;
 }
 
 .Table button:hover {
     background-color: rgb(190, 113, 49);
-    transform: translatex(2px) translateY(2px);
+    transform: translatex(-2px) translateY(-2px);
 }
